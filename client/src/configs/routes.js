@@ -6,7 +6,7 @@ export const routes = [
   {
     path: "/admin",
     module: <AdminPage/>,
-    isPrivate: true,
+    isPrivate: false,
   },
   {
     path: "/",
