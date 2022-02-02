@@ -3,17 +3,20 @@ import Homepage from "../pages/homepage/Homepage";
 import LoginPage from "../pages/login/LoginPage";
 import AdminHomepage from "pages/adminHomepage/AdminHomepage";
 import BannerEditor from "pages/bannerEditor/BannerEditor";
+import PageNotFound from "pages/pageNotFound/PageNotFound";
 
 export const mainRoutes = [
   {
     path: "/",
     module: <Homepage/>,
-    isPrivate: false,
   },
   {
     path: "/login",
     module: <LoginPage/>,
-    isPrivate: false,
+  },
+  {
+    path: "*",
+    module: <PageNotFound/>,
   },
 ];
 
