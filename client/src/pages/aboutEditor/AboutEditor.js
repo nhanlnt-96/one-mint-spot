@@ -5,16 +5,12 @@ import UploadImg from "components/uploadImg/UploadImg";
 import Homepage from "pages/homepage/Homepage";
 import EditorTitle from "components/editorTitle/EditorTitle";
 
-const BannerEditor = () => {
+const AboutEditor = () => {
   return (
     <Container fluid className="editor-container">
       <Row className="editor-top-container">
         <Col className="editor-item">
-          <EditorTitle title={"Banner's Title"}/>
-          <EditorComp/>
-        </Col>
-        <Col className="editor-item">
-          <EditorTitle title={"Banner's Subtitle"}/>
+          <EditorTitle title={"About's Content"}/>
           <EditorComp/>
         </Col>
         <Col className="editor-item">
@@ -35,4 +31,4 @@ const BannerEditor = () => {
   );
 };
 
-export default BannerEditor;
+export default AboutEditor;

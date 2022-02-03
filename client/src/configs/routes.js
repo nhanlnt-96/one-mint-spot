@@ -4,6 +4,7 @@ import LoginPage from "../pages/login/LoginPage";
 import AdminHomepage from "pages/adminHomepage/AdminHomepage";
 import BannerEditor from "pages/bannerEditor/BannerEditor";
 import PageNotFound from "pages/pageNotFound/PageNotFound";
+import AboutEditor from "pages/aboutEditor/AboutEditor";
 
 export const mainRoutes = [
   {
@@ -31,6 +32,10 @@ export const adminRoutes = {
     {
       path: "banner",
       module: <BannerEditor/>
+    },
+    {
+      path: "about",
+      module: <AboutEditor/>
     }
   ]
 };
