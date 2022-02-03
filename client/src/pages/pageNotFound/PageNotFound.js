@@ -1,6 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import IconPNF from "assets/imgs/page-not-found.png";
+import {Button} from "react-bootstrap";
 
 import "./PageNotFound.scss";
 
@@ -11,9 +12,9 @@ const PageNotFound = () => {
       <img src={IconPNF} alt="page-not-found"/>
       <h3>OOPS !!</h3>
       <h2>PAGE NOT FOUND</h2>
-      <button className="back-home-btn" onClick={() => navigate("/")}>
+      <Button variant="light" className="back-home-btn" onClick={() => navigate("/")}>
         Go to Home
-      </button>
+      </Button>
     </div>
   );
 };
