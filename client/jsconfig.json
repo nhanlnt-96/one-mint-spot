@@ -13,6 +13,9 @@
       ],
       "configs/*": [
         "configs/*"
+      ],
+      "helpers/*": [
+        "helpers/*"
       ]
     }
   }

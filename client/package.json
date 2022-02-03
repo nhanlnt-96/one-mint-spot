@@ -13,6 +13,7 @@
     "firebase": "^9.6.5",
     "formik": "^2.2.9",
     "html-to-draftjs": "^1.5.0",
+    "moment": "^2.29.1",
     "node-sass": "6.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",

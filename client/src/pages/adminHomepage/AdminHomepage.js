@@ -3,6 +3,7 @@ import {Container, Row} from "react-bootstrap";
 import Logo from "assets/imgs/bgLogin.svg";
 
 import "./AdminHomepage.scss";
+import UploadImg from "components/uploadImg/UploadImg";
 
 const AdminHomepage = () => {
   return (
@@ -13,6 +14,7 @@ const AdminHomepage = () => {
           <h1 className="title">Welcome to <span>Project name</span> Admin page</h1>
         </Row>
       </Container>
+      <UploadImg isMultiImg={true}/>
     </Container>
   );
 };
