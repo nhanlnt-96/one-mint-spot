@@ -5,6 +5,8 @@ import {Editor} from "react-draft-wysiwyg";
 import draftToHtml from "draftjs-to-html";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
+import "./EditorComp.scss";
+
 const EditorComp = ({newValue}) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
   const onEditorStateChange = (editorState) => {
@@ -12,11 +14,11 @@ const EditorComp = ({newValue}) => {
     newValue(draftToHtml(convertToRaw(editorState.getCurrentContent())));
   };
   return (
-    <Container className="editor-container">
+    <Container className="editor-comp-container">
       <Editor
         editorState={editorState}
-        wrapperClassName="demo-wrapper"
-        editorClassName="demo-editor"
+        wrapperClassName="editor-comp-wrapper"
+        editorClassName="editor-comp-edit"
         onEditorStateChange={onEditorStateChange}
       />
     </Container>

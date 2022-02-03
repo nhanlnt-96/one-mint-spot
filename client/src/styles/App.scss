@@ -1,0 +1,27 @@
+@import "./rwd";
+
+.editor {
+  min-height: calc(100vh - 48px);
+
+  &-container {
+    height: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  @include mobile {
+    min-height: calc(100vh - 54px);
+  }
+}
+
+.editor-container {
+  .editor-top-container {
+    margin: 24px 0;
+
+    .editor-item {
+      &:not(:last-child) {
+        flex: 2;
+      }
+    }
+  }
+}

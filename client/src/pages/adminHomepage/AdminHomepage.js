@@ -14,7 +14,6 @@ const AdminHomepage = () => {
           <h1 className="title">Welcome to <span>Project name</span> Admin page</h1>
         </Row>
       </Container>
-      <UploadImg isMultiImg={true}/>
     </Container>
   );
 };
