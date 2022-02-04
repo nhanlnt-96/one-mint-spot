@@ -16,7 +16,10 @@
       ],
       "helpers/*": [
         "helpers/*"
-      ]
+      ],
+"redux/*": [
+"redux/*"
+]
     }
   }
 }
