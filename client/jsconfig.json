@@ -17,9 +17,9 @@
       "helpers/*": [
         "helpers/*"
       ],
-"redux/*": [
-"redux/*"
-]
+      "redux/*": [
+        "redux/*"
+      ]
     }
   }
 }
