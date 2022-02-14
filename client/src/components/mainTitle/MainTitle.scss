@@ -1,0 +1,40 @@
+.main-title {
+  margin-bottom: 24px;
+
+  &-container {
+    position: relative
+  }
+}
+
+.main-title-container .main-title-content {
+  width: 260px !important;
+  height: 100px !important;
+  background: url("../../assets/imgs/tittleShapes.png") no-repeat 50%;
+  background-size: 100% 100%;
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    width: calc(50% - 130px);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: #000;
+  }
+
+  &:after {
+    left: 0;
+  }
+
+  &:before {
+    right: 0;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
