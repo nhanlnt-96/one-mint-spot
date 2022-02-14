@@ -1,11 +1,21 @@
 import React, {useState} from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {mainHeaderMenu} from "configs/mainHeaderMenu";
+import {connect} from "redux/blockchain/blockchainActions";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchData} from "redux/data/dataActions";
 
 import "./MainHeader.scss";
 
 const MainHeader = () => {
+  const dispatch = useDispatch();
+  const blockchain = useSelector((state) => state.blockchain);
   const [isActive, setIsActive] = useState(false);
+  const getData = () => {
+    if (blockchain.account !== "" && blockchain.smartContract !== null) {
+      dispatch(fetchData(blockchain.account));
+    }
+  };
   return (
     <Navbar collapseOnSelect expand="lg" className="main-header">
       <Container className="main-header-container">
@@ -26,7 +36,12 @@ const MainHeader = () => {
             }
           </Nav>
           <Nav className="main-header-button">
-            <button className="button-item">Connect Wallet</button>
+            <button className="button-item" onClick={(e) => {
+              e.preventDefault();
+              dispatch(connect());
+              getData();
+            }}>Connect Wallet
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>
