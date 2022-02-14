@@ -107,17 +107,14 @@ const MintBoxComp = () => {
   }, [blockchain.account]);
   
   return (
-    <ResponsiveWrapper flex={1} style={{padding: 24}} test>
-      <s.SpacerLarge/>
+    <ResponsiveWrapper flex={1} style={{padding: "24px 0"}} test>
       <s.Container
         flex={2}
         jc={"center"}
         ai={"center"}
         style={{
-          backgroundColor: "var(--accent)",
           padding: 24,
           borderRadius: 24,
-          border: "4px dashed var(--secondary)",
           boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
         }}
       >
@@ -145,12 +142,18 @@ const MintBoxComp = () => {
         {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
           <>
             <s.TextTitle
-              style={{textAlign: "center", color: "var(--accent-text)"}}
+              style={{
+                textAlign: "center",
+                color: "var(--accent-text)"
+              }}
             >
               The sale has ended.
             </s.TextTitle>
             <s.TextDescription
-              style={{textAlign: "center", color: "var(--accent-text)"}}
+              style={{
+                textAlign: "center",
+                color: "var(--accent-text)"
+              }}
             >
               You can still find {CONFIG.NFT_NAME} on
             </s.TextDescription>
@@ -162,14 +165,20 @@ const MintBoxComp = () => {
         ) : (
           <>
             <s.TextTitle
-              style={{textAlign: "center", color: "var(--accent-text)"}}
+              style={{
+                textAlign: "center",
+                color: "var(--accent-text)"
+              }}
             >
               1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
               {CONFIG.NETWORK.SYMBOL}.
             </s.TextTitle>
             <s.SpacerXSmall/>
             <s.TextDescription
-              style={{textAlign: "center", color: "var(--accent-text)"}}
+              style={{
+                textAlign: "center",
+                color: "var(--accent-text)"
+              }}
             >
               Excluding gas fees.
             </s.TextDescription>
@@ -186,15 +195,6 @@ const MintBoxComp = () => {
                   Connect to the {CONFIG.NETWORK.NAME} network
                 </s.TextDescription>
                 <s.SpacerSmall/>
-                <StyledButton
-                  onClick={(e) => {
-                    e.preventDefault();
-                    dispatch(connect());
-                    getData();
-                  }}
-                >
-                  CONNECT
-                </StyledButton>
                 {blockchain.errorMsg !== "" ? (
                   <>
                     <s.SpacerSmall/>
@@ -269,7 +269,6 @@ const MintBoxComp = () => {
           </>
         )}
       </s.Container>
-      <s.SpacerLarge/>
     </ResponsiveWrapper>
   );
 };

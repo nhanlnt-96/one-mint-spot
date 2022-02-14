@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
 @import "./rwd";
 
 * {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .editor {
@@ -53,6 +53,12 @@
     font-size: 26px;
     position: relative;
     overflow: hidden;
+    transition: all .1s ease-in;
+
+    &:hover {
+      letter-spacing: 5px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    }
 
     .button-icon {
       width: 60px;
@@ -101,7 +107,7 @@
     }
 
     .button-name {
-      margin-right: 80px;
+      margin-right: 50px;
       transition: 1s;
       color: #fff;
     }
