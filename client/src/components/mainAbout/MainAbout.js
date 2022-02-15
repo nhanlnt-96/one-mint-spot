@@ -18,12 +18,12 @@ const MainAbout = () => {
           </Col>
           <Col lg={7} md={8} sm={12}
                className="about-right-side d-flex justify-content-center align-items-center">
-            <p
-              data-aos="fade-right" className="content">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Adipisci aspernatur commodi consequatur deleniti eaque eos esse est et explicabo facilis
-              fugiat impedit labore nam nulla, quibusdam quis recusandae temporibus. Accusamus aspernatur atque, cum
-              dignissimos distinctio doloribus ducimus, earum harum illum ipsa iste neque nisi, numquam officia porro
-              praesentium suscipit voluptates.</p>
+            <div
+              data-aos="fade-right" className="content">One mint spot is a launchpad that help anyone create a full NFT
+              collection<br/>
+              We Help in all steps from Drawing to mint Function<br/>
+              You only need an idea .
+            </div>
           </Col>
         </Row>
       </Container>
