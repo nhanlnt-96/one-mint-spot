@@ -17,9 +17,9 @@ const Homepage = () => {
       <Row id="how-it-works">
         <MainHowItWorks/>
       </Row>
-      <Row id="collection">
-        <MainCollection/>
-      </Row>
+      {/*<Row id="collection">*/}
+      {/*  <MainCollection/>*/}
+      {/*</Row>*/}
     </Container>
   );
 };
