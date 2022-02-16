@@ -13,7 +13,7 @@ const MainCollection = () => {
   return (
     <Container fluid className="main-collection">
       <MainTitle title={"The Estates’ NFT Collection"}/>
-      <Container className="main-collection-container container">
+      <Container className="main-collection-container">
         <Row data-aos="fade-up" className="main-collection-content main-primary-box">
           {
             collectionImg.map((val, index) => (
