@@ -4,6 +4,7 @@ import MainBanner from "components/mainBanner/MainBanner";
 import MainAbout from "components/mainAbout/MainAbout";
 import MainCollection from "components/mainCollection/MainCollection";
 import MainHowItWorks from "components/mainHowItWorks/MainHowItWorks";
+import MainService from "components/mainService/MainService";
 
 const Homepage = () => {
   return (
@@ -16,6 +17,9 @@ const Homepage = () => {
       </Row>
       <Row id="how-it-works">
         <MainHowItWorks/>
+      </Row>
+      <Row id="service">
+        <MainService/>
       </Row>
       {/*<Row id="collection">*/}
       {/*  <MainCollection/>*/}

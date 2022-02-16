@@ -2,6 +2,7 @@
 
 .main-how {
   padding: 24px 0 !important;
+
   .main-title-content {
     width: 560px !important;
 
@@ -64,17 +65,15 @@
 
     &-desc {
       width: 100%;
-      display: grid;
-      grid-template-columns: 40px 1fr;
-      grid-gap: 12px;
       margin-top: 24px;
     }
 
     &-number {
-      width: 100%;
+      width: 40px;
       height: 40px;
       background-color: #3236DD;
       border-radius: 100%;
+      margin: 12px 0;
 
       .number {
         color: #ffffff;

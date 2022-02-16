@@ -13,12 +13,12 @@ const MainHowItWorks = () => {
         <Row className="main-primary-box main-how-content justify-content-center align-items-center">
           {
             howItWorksData.map((val, index) => (
-              <div key={index} className="step-item">
+              <div data-aos="zoom-in" key={index} className="step-item">
                 <div className="step-container d-flex flex-column justify-content-center align-items-center">
                   <div className="step-img">
                     <img src={val.img} alt="landz"/>
                   </div>
-                  <div className="step-desc justify-content-center align-items-center">
+                  <div className="step-desc d-flex flex-column justify-content-center align-items-center">
                     <div className="step-number d-flex justify-content-center align-items-center">
                       <div className="number">{val.step}</div>
                     </div>

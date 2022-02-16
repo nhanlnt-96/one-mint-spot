@@ -1,0 +1,1 @@
+export const drawingData = ["Know your ideas and brainstorm all what you have in mind.","Draw a Sketch by hand","Create a digital version","Creating attributes","Finalising arts","Delivery"];
