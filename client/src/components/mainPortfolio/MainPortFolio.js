@@ -21,7 +21,7 @@ const MainPortFolio = () => {
       <Container className="main-portfolio-container">
         {
           portfolioData.map((val, index) => (
-            <div key={index} className="project-item">
+            <div data-aos="zoom-in" key={index} className="project-item">
               <div className="project-img-preview">
                 <img src={val.preview} alt={val.siteName}/>
               </div>

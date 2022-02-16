@@ -8,23 +8,19 @@ export const mainHeaderMenu = [
     path: "#about"
   },
   {
-    label: "collection",
-    path: "#collection"
-  },
-  {
-    label: "roadmap",
-    path: "#roadmap"
-  },
-  {
-    label: "faq",
-    path: "#faq"
+    label: "how it works",
+    path: "#how-it-works"
   },
   {
     label: "service",
     path: "#service"
   },
   {
-    label: "team",
-    path: "#team"
+    label: "portfolio",
+    path: "#portfolio"
+  },
+  {
+    label: "faq",
+    path: "#faq"
   },
 ];
