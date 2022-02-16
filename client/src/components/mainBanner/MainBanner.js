@@ -47,7 +47,7 @@ const MainBanner = () => {
                className="main-banner-right-side d-flex justify-content-center align-items-center">
             {
               !blockchain.account ? (
-                <div className="main-banner-img">
+                <div data-aos="zoom-in" className="main-banner-img">
                   <img src={BannerImg} alt="banner-img"/>
                 </div>
               ) : (

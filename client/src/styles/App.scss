@@ -130,3 +130,22 @@
   background-color: #9da0ef;
   border-radius: 20px;
 }
+
+.main-subtitle {
+  border-left: 5px solid #3236DD;
+  min-height: 50px;
+  background-color: #9da0ef;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}

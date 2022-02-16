@@ -1,0 +1,89 @@
+@import "../../styles/rwd";
+
+.footer-comp {
+  height: 324px;
+  padding: 24px 0 0 !important;
+
+  &-container {
+    background-color: #777ae9;
+    height: 200px;
+    position: relative;
+    padding-bottom: 24px;
+  }
+}
+
+.footer-comp-container .footer-comp-contact {
+  min-height: 200px;
+  position: absolute;
+  background-color: #333697;
+  top: -100px;
+  border-radius: 24px;
+  left: 50%;
+  padding: 20px 50px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  .left-side .subtitle, .left-side .title {
+    color: #ffffff;
+  }
+
+  .left-side .title {
+    font-size: 30px;
+  }
+
+  .left-side .subtitle {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .right-side .download-app .download-btn {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    min-width: 140px;
+    height: 50px;
+    border-radius: 50px;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+
+  @include mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: unset;
+    .right-side .get-email-bar {
+      width: 100%;
+      margin-top: 12px;
+    }
+  }
+  @include tablet {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.footer-comp-container .footer-social .social-item {
+  font-size: 25px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  &:not(:first-child) {
+    margin-left: 24px;
+  }
+
+  &:hover {
+    background-color: hsla(0, 0%, 88.2%, .4);
+  }
+}

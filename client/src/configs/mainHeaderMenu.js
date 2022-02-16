@@ -23,4 +23,8 @@ export const mainHeaderMenu = [
     label: "faq",
     path: "#faq"
   },
+  {
+    label: "video library",
+    path: "#video"
+  }
 ];

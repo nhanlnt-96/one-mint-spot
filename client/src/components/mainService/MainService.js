@@ -11,19 +11,19 @@ const MainService = () => {
       <MainTitle title={"service"}/>
       <Container className="main-service-container">
         <Row className="main-service-container">
-          <div className="main-service-title">
+          <div className="main-subtitle">
             <h2>creation</h2>
           </div>
           <CreationService/>
         </Row>
         <Row className="main-service-container">
-          <div className="main-service-title">
+          <div className="main-subtitle">
             <h2>assistance</h2>
           </div>
           <AssistanceService/>
         </Row>
         <Row className="main-service-container">
-          <div className="main-service-title">
+          <div className="main-subtitle">
             <h2>site builder</h2>
           </div>
           <SiteBuilderService/>
