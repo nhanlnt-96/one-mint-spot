@@ -1,24 +1,33 @@
 import React from "react";
 import {ServiceTitle} from "components/mainService/components/ServiceTitle";
 import Landing from "assets/icons/landing-page.png";
-import {Container} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
+import {landingPageData} from "configs/landingPageData";
 
 export const LandingPage = () => {
   return (
     <>
       <ServiceTitle title={"landing page"} titleIcon={Landing}/>
-      <Container className="landing-container main-primary-box">
-        <div className="desc">Create Front-end design that include:
-        </div>
-        <ul>
-          <li className="desc">Roadmap</li>
-          <li className="desc">FAQ</li>
-          <li className="desc">About us</li>
-          <li className="desc">Description</li>
-          <li className="desc">Team</li>
-          <li className="desc">Collection</li>
-          <li className="desc">Social links</li>
-        </ul>
+      <Container className="landing-container">
+        <Row className="landing-content-intro">
+          <div className="desc">Create Front-end design that include:</div>
+        </Row>
+        <Row className="landing-content">
+          {
+            landingPageData.map((val, index) => (
+              <div key={index} className="service-box">
+                <div className="icon d-flex justify-content-center align-items-center">
+                  <img src={val.icon} alt=""/>
+                </div>
+                <div className="content">
+                  <h6 className="label">{val.label}</h6>
+                  <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eum
+                    incidunt labore maiores nisi suscipit?</p>
+                </div>
+              </div>
+            ))
+          }
+        </Row>
       </Container>
     </>
   );

@@ -8,7 +8,7 @@ export const GenerateNFT = () => {
     <>
       <ServiceTitle title={"generate nft"} titleIcon={NFT}/>
       <Container className="generate-nft-container">
-        <div className="desc">Generate NFT from layers design</div>
+        <div className="desc">Generate NFT from layers design.</div>
       </Container>
     </>
   );
