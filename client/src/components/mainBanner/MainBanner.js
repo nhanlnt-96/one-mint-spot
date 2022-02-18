@@ -1,60 +1,58 @@
-import React, {useState} from "react";
+import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import Shape2 from "assets/imgs/bannerShape2.png";
 import MainHeader from "components/mainHeader/MainHeader";
-import BannerImg from "assets/imgs/bgBanner.png";
-import LoadingGif from "assets/gifs/loading.gif";
+import RightImg from "assets/imgs/banner/rightImg.png";
+import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/all";
 
 import "./MainBanner.scss";
-import {useSelector} from "react-redux";
-import MintBoxComp from "components/mintBox/MintBoxComp";
 
 const MainBanner = () => {
-  const blockchain = useSelector((state) => state.blockchain);
-  const [bntActive, setBtnActive] = useState(false);
-  const [bannerBtnName, setBannerBtnName] = useState("join us");
-  const onJoinUsBtnClick = () => {
-    setBtnActive(true);
-    setBannerBtnName("thanks");
-  };
   return (
     <Container fluid className="main-banner">
-      <img src={Shape2} alt="banner-shape" className="shape2"/>
       <MainHeader/>
-      <Container className="main-banner-container d-flex justify-content-center align-items-center">
+      <Container className="main-banner-container">
         <Row className="main-banner-content">
-          <Col lg={7} md={6} sm={12}
-               className="main-banner-left-side d-flex flex-column justify-content-center align-items-center">
-            <div className="main-banner-title">
-              <div data-aos="zoom-in" className="title">WELCOME TO THIS WEBSITE FOR NFT’S</div>
-            </div>
-            <div className="main-banner-subtitle">
-              <div data-aos="fade-down" className="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque
-                exercitationem fuga iste molestiae molestias odit perspiciatis porro sunt tempore voluptatum!
-              </div>
-            </div>
-            <div data-aos="zoom-in" className="main-primary-button">
-              <button className={`button-item  ${bntActive && "active"}`} onClick={onJoinUsBtnClick}>
-                <p className="button-name">{bannerBtnName}</p>
-                <div className="button-icon d-flex justify-content-center align-items-center">
-                  <img src={LoadingGif} alt="banner-connecting-to-wallet"/>
-                </div>
-              </button>
+          <Col lg={6} md={7} sm={12} className="main-banner-left-side d-flex justify-content-end align-items-center">
+            <div className="side-content d-flex flex-column justify-content-center">
+              <h1 className="side-title">Lorem ipsum dolor.</h1>
+              <h2 className="sub-title">One mint spot is a launchpad that help anyone create a full NFT
+                collection.</h2>
+              <h2 className="sub-title">We Help in all steps from Drawing to Mint function.</h2>
+              <h2 className="sub-title">You only need an idea.</h2>
             </div>
           </Col>
-          <Col lg={5} md={6} sm={12}
+          <Col lg={6}
+               md={5}
+               sm={12}
                className="main-banner-right-side d-flex justify-content-center align-items-center">
-            {
-              !blockchain.account ? (
-                <div data-aos="zoom-in" className="main-banner-img">
-                  <img src={BannerImg} alt="banner-img"/>
-                </div>
-              ) : (
-                <MintBoxComp/>
-              )
-            }
+            <img src={RightImg} alt=""/>
           </Col>
+        </Row>
+        <Row className="main-banner-contact">
+          <div className="address-container d-flex justify-content-center">
+            <p className="address-item">Lorem ipsum dolor sit amet.</p>
+            <a href="tel:123456789" className="phone">+123 456 789 0</a>
+          </div>
+          <div className="contact-social">
+            <a href="#" className="social-item">
+              <div className="social-icon">
+                <FaInstagram/>
+              </div>
+              <p className="social-detail">instagram</p>
+            </a>
+            <a href="#" className="social-item">
+              <div className="social-icon">
+                <FaFacebookF/>
+              </div>
+              <p className="social-detail">facebook</p>
+            </a>
+            <a href="#" className="social-item">
+              <div className="social-icon">
+                <FaTwitter/>
+              </div>
+              <p className="social-detail">twitter</p>
+            </a>
+          </div>
         </Row>
       </Container>
     </Container>

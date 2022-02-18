@@ -1,12 +1,12 @@
 import React from "react";
 import {Alert, Col, Container, Row} from "react-bootstrap";
-import BgLogin from "../../assets/imgs/bgLogin.svg";
+import BgLogin from "assets/imgs/login/bgLogin.svg";
 import * as Yup from "yup";
 import {ErrorMessage, Form, Formik, Field} from "formik";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 
-import {login} from "../../redux/auth/authAction";
+import {login} from "redux/auth/authAction";
 
 import "./LoginPage.scss";
 
