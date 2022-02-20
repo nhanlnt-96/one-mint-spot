@@ -8,9 +8,11 @@ import MainFaq from "components/mainFaq/MainFaq";
 import MainVideoLibrary from "components/mainVideoLibrary/MainVideoLibrary";
 import FooterComp from "components/footerComp/FooterComp";
 
+import "./Homepage.scss";
+
 const Homepage = () => {
   return (
-    <Container fluid style={{backgroundColor: "rgb(227, 228, 255)"}}>
+    <Container fluid className="homepage-container">
       <Row id="home">
         <MainBanner/>
       </Row>
