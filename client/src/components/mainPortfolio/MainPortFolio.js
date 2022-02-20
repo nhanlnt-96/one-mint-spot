@@ -30,7 +30,7 @@ const MainPortFolio = () => {
                   <div className="name">{val.siteName}</div>
                 </div>
                 <div className="project-desc">
-                  <div className="desc">Mint your {val.siteName}</div>
+                  <div className="desc">{val.description}</div>
                 </div>
                 <div className="project-preview-button">
                   <button onClick={() => onPreviewSiteBtnClick(val.siteName, val.siteUrl)}>Preview</button>
