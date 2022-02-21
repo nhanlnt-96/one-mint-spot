@@ -21,7 +21,10 @@ const MainPortFolio = () => {
       <Container className="main-portfolio-container">
         {
           portfolioData.map((val, index) => (
-            <div data-aos="zoom-in" key={index} className="project-item">
+            <div onClick={() => onPreviewSiteBtnClick(val.siteName, val.siteUrl)}
+                 data-aos="zoom-in"
+                 key={index}
+                 className="project-item">
               <div className="project-img-preview">
                 <img src={val.preview} alt={val.siteName}/>
               </div>
@@ -32,9 +35,9 @@ const MainPortFolio = () => {
                 <div className="project-desc">
                   <div className="desc">{val.description}</div>
                 </div>
-                <div className="project-preview-button">
-                  <button onClick={() => onPreviewSiteBtnClick(val.siteName, val.siteUrl)}>Preview</button>
-                </div>
+                {/*<div className="project-preview-button">*/}
+                {/*  <button onClick={() => onPreviewSiteBtnClick(val.siteName, val.siteUrl)}>Preview</button>*/}
+                {/*</div>*/}
               </div>
             </div>
           ))

@@ -20,47 +20,68 @@
 .main-portfolio-container .project-item {
   background-color: #ffffff;
   width: 100%;
-  min-height: 400px;
+  //min-height: 400px;
   transition: all .1s linear;
   cursor: pointer;
   display: grid;
   grid-template-rows: 200px 1fr;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+
+    .project-img-preview img {
+      transform: scale(1.1);
+    }
+
+    .project-desc-container {
+      .project-name, .project-desc {
+        color: #ffffff;
+      }
+    }
   }
 
   .project-img-preview {
     height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all .3s linear;
     }
   }
 
   .project-desc-container {
-    padding: 12px;
-    display: grid;
-    grid-template-rows: 50px 1fr 50px;
-    grid-gap: 12px;
+    //padding: 12px;
+    //display: grid;
+    //grid-template-rows: 50px 1fr 50px;
+    //grid-gap: 12px;
+    margin-top: 24px;
 
     .project-name, .project-desc, .project-preview-button {
       display: flex;
-      justify-content: center;
+      //justify-content: center;
       align-items: center;
-      text-align: center;
+      //text-align: center;
     }
 
     .project-name .name {
-      font-size: 24px;
+      font-size: 16px;
+      color: #3236DD;
       font-weight: bold;
     }
 
     .project-desc .desc {
-      font-style: italic;
-      font-size: 20px;
+      //font-style: italic;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: justify;
+      margin-top: 24px;
     }
 
     .project-preview-button button {
