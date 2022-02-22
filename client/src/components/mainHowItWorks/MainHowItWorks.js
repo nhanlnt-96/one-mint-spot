@@ -10,7 +10,7 @@ const MainHowItWorks = () => {
     <Container className="main-how">
       <MainTitle title={"How that works"}/>
       <Container className="main-how-container">
-        <Row className="main-primary-box main-how-content justify-content-center align-items-center">
+        <Row className="main-how-content justify-content-center align-items-center">
           {
             howItWorksData.map((val, index) => (
               <div data-aos="zoom-in" key={index} className="step-item">
