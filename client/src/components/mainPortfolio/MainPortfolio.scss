@@ -17,7 +17,7 @@
   }
 }
 
-.main-portfolio-container .project-item {
+.project-item {
   background-color: #ffffff;
   width: 100%;
   //min-height: 400px;
@@ -102,4 +102,43 @@
 
 .modal-body-custom {
   padding: 0 !important;
+}
+
+.main-portfolio .load-more-btn {
+  margin-top: 24px;
+
+  button {
+    border: 2px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: .3s linear;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .4);
+    }
+
+    img {
+      margin-left: 12px;
+    }
+  }
+}
+
+.modal-all-project-custom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+  }
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
