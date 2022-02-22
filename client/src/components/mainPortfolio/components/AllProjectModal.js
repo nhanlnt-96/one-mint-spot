@@ -1,5 +1,4 @@
 import {Modal} from "react-bootstrap";
-import {portfolioData} from "configs/portfolioData";
 import React from "react";
 
 export const AllProjectModal = ({

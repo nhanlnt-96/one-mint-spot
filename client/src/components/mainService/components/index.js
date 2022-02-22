@@ -6,3 +6,4 @@ export * from "./GenerateNFT";
 export * from "./LandingPage";
 export * from "./AssistanceService";
 export * from "./SiteBuilderService";
+export * from "./ShowAllImgModal";
