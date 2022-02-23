@@ -32,7 +32,9 @@
 .main-banner-content {
   .main-banner {
     &-left-side .side-content {
-      .side-title {
+      width: 100%;
+
+      .Typewriter__wrapper, .Typewriter__cursor {
         font-size: 45px;
         line-height: 55px;
         text-transform: uppercase;
@@ -47,12 +49,18 @@
       .sub-title {
         font-size: 20px;
         line-height: 30px;
+        transition: .1s ease-in;
+        transform: scale(0);
         @include mobile {
           text-align: center;
           &:last-child {
             margin-bottom: 24px;
           }
         }
+      }
+
+      .sub-title-active {
+        transform: scale(1);
       }
     }
 

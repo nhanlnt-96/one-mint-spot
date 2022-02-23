@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import MainHeader from "components/mainHeader/MainHeader";
 import RightImg from "assets/imgs/banner/rightImg.png";
 import {socialData} from "configs/socialData";
+import TypewriterComponent from "typewriter-effect";
 
 import "./MainBanner.scss";
 
 const MainBanner = () => {
+  const [showLeftTopContent, setShowLeftTopContent] = useState(false);
   return (
     <Container fluid className="main-banner">
       <MainHeader/>
@@ -14,11 +16,19 @@ const MainBanner = () => {
         <Row className="main-banner-content">
           <Col lg={6} md={7} sm={12} className="main-banner-left-side d-flex justify-content-end align-items-center">
             <div className="side-content d-flex flex-column justify-content-center">
-              <h1 className="side-title">One mint spot</h1>
-              <h2 className="sub-title">One mint spot is a launchpad that help anyone create a full NFT
-                collection.</h2>
-              <h2 className="sub-title">We Help in all steps from Drawing to Mint function.</h2>
-              <h2 className="sub-title">You only need an idea.</h2>
+              <TypewriterComponent
+                onInit={(typewriter) => {
+                  typewriter.typeString("One mint spot").start().callFunction(() => {
+                    setShowLeftTopContent(true);
+                  });
+                }}
+              />
+              {/*<h1 className="side-title"></h1>*/}
+              <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>One mint spot is a launchpad that
+                help anyone create a full NFT collection.</h2>
+              <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>We Help in all steps from Drawing
+                to Mint function.</h2>
+              <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>You only need an idea.</h2>
             </div>
           </Col>
           <Col lg={6}

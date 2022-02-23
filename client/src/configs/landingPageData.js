@@ -9,30 +9,37 @@ import Social from "../assets/imgs/services/landingSocial.svg";
 export const landingPageData = [
   {
     label: "About us",
-    icon: About
+    icon: About,
+    desc: "You give an idea about the collection and story behind it."
   },
   {
     label: "Description",
-    icon: Desc
+    icon: Desc,
+    desc: "Give a little description about the collection and the arts."
   },
   {
     label: "Collection",
-    icon: Collection
+    icon: Collection,
+    desc: "We will showcase the NFT collection with some beautiful sliders."
   },
   {
     label: "Roadmap",
-    icon: Roadmap
+    icon: Roadmap,
+    desc: "Tell people about collection planing for the upcoming months/years."
   },
   {
     label: "Team",
-    icon: Team
+    icon: Team,
+    desc: "Showcase the team behind the collection."
   },
   {
     label: "FAQ",
-    icon: Faq
+    icon: Faq,
+    desc: "Here you respond about all customers questions regarding the collection."
   },
   {
     label: "Social links",
-    icon: Social
+    icon: Social,
+    desc: "Link you community to your social page for more engagement."
   },
 ];

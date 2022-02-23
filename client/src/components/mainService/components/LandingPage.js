@@ -21,8 +21,7 @@ export const LandingPage = () => {
                 </div>
                 <div className="content">
                   <h6 className="label">{val.label}</h6>
-                  <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eum
-                    incidunt labore maiores nisi suscipit?</p>
+                  <p className="desc">{val.desc}</p>
                 </div>
               </div>
             ))

@@ -7,4 +7,4 @@ import Img6 from "../assets/imgs/services/drawing6.png";
 import Img7 from "../assets/imgs/services/drawing7.png";
 import Img8 from "../assets/imgs/services/drawing8.png";
 
-export const drawingImgData = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8];
+export const drawingImgData = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8];
