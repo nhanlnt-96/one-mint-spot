@@ -27,9 +27,8 @@ const MainPortFolio = () => {
             <>
               {
                 (index + 1) <= 6 && (
-                  <div onClick={() => onPreviewSiteBtnClick(val.siteName, val.siteUrl)}
+                  <div key={index} onClick={() => onPreviewSiteBtnClick(val.siteName, val.siteUrl)}
                        data-aos="zoom-in"
-                       key={index}
                        className="project-item">
                     <div className="project-img-preview">
                       <img src={val.preview} alt={val.siteName}/>

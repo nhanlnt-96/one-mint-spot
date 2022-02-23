@@ -26,7 +26,7 @@ const MainVideoLibrary = () => {
         <Accordion className="accordion-custom-container">
           {
             videoLibraryData.map((val, index) => (
-              <Accordion.Item eventKey={index.toString()}>
+              <Accordion.Item key={index} eventKey={index.toString()}>
                 <Accordion.Header className="accordion-header-custom">{val.label}</Accordion.Header>
                 <Accordion.Body className="accordion-body-custom">
                   <VideoPlayer videoUrl={val.videoUrl} imgIntro={val.posterImg}/>

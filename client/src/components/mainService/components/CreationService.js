@@ -6,6 +6,7 @@ import {drawingData} from "configs/drawingData";
 import MintFuncIcon from "assets/icons/mint.png";
 import {mintFuncData} from "configs/mintFuncData";
 import {drawingImgData} from "configs/drawingImgData";
+import SlideShow from "components/slideShow/SlideShow";
 
 export const CreationService = () => {
   const [show, setShow] = useState(false);
@@ -14,20 +15,7 @@ export const CreationService = () => {
       <div className="drawing d-flex flex-column justify-content-center align-items-center">
         <StepComp title={"drawing"} data={drawingData} icon={DrawingIcon}/>
         <div className="drawing-img-container d-flex flex-column justify-content-center align-items-center">
-          <div className="img-container d-flex justify-content-center align-items-center">
-            {
-              drawingImgData.map((val, index) => (
-                <>
-                  {
-                    (index + 1) <= 2 && (
-                      <img src={val} alt="one-mint-spot"/>
-                    )
-                  }
-                </>
-              ))
-            }
-          </div>
-          <button className="view-more" onClick={() => setShow(true)}>See more</button>
+          <SlideShow imgData={drawingImgData}/>
         </div>
       </div>
       <div data-aos="fade-up" className="generate-nft">

@@ -9,7 +9,9 @@ export const GenerateNFT = () => {
       <ServiceTitle title={"generate nft"} titleIcon={NFT}/>
       <Container className="generate-nft-container">
         <Row className="generate-nft-content">
-          <div className="desc">Generate NFT from layers design.</div>
+          <div className="desc">We create the NFT from layers design and create the metadata needed then we take care of
+            IPFS upload.
+          </div>
         </Row>
       </Container>
     </>
