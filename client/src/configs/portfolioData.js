@@ -11,14 +11,15 @@ import Fruity from "../assets/imgs/fruity.png";
 import Pigeonhead from "../assets/imgs/pigeonhead.png";
 import Frogs from "../assets/imgs/frogs.png";
 import Landz from "../assets/imgs/landz.png";
-import Doodle from "../assets/imgs/doodle.png"
-import Monalisa from "../assets/imgs/monalisa.png"
-import Toadle from "../assets/imgs/toadle.png"
-import Astro from "../assets/imgs/astro.png"
-import Classic from "../assets/imgs/classic.png"
-import Sol from "../assets/imgs/solmekkas.png"
-import Llmadrama from "../assets/imgs/llamadrama.png"
-import Crypto from "../assets/imgs/crypto.png"
+import Doodle from "../assets/imgs/doodle.png";
+import Monalisa from "../assets/imgs/monalisa.png";
+import Toadle from "../assets/imgs/toadle.png";
+import Astro from "../assets/imgs/astro.png";
+import Classic from "../assets/imgs/classic.png";
+import Sol from "../assets/imgs/solmekkas.png";
+import Llmadrama from "../assets/imgs/llamadrama.png";
+import Crypto from "../assets/imgs/crypto.png";
+import Bags from "../assets/imgs/bags.png";
 
 export const portfolioData = [
   {
@@ -150,5 +151,11 @@ export const portfolioData = [
     siteUrl: "https://cryptoclones.net/",
     description: "Crypto Clones is the first and only DAO that uses 100% of secondary sales and a large portion of primary sales to purchase and fractionalize CloneX and the rarest bluechip NFTs to be distributed to its members.",
     preview: Crypto
+  },
+  {
+    siteName: "Solana Bags",
+    siteUrl: "https://solana-bags.netlify.app/",
+    description: "Gifted by men, desired by women. 7000 unique luxury NFT handbags on the Solana blockchain.",
+    preview: Bags
   },
 ];
