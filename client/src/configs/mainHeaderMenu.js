@@ -3,10 +3,10 @@ export const mainHeaderMenu = [
     label: "home",
     path: "#home"
   },
-  {
-    label: "about",
-    path: "#about"
-  },
+  // {
+  //   label: "about",
+  //   path: "#about"
+  // },
   {
     label: "how it works",
     path: "#how-it-works"
