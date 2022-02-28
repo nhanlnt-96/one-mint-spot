@@ -16,33 +16,22 @@ const MainBanner = () => {
       <Container className="main-banner-container">
         <Row className="main-banner-content">
           <Col lg={6} md={7} sm={12} className="main-banner-left-side d-flex justify-content-start align-items-center">
-            <div className="border-container">
-              <div className="side-content d-flex flex-column justify-content-center">
-                <TypewriterComponent
-                  onInit={(typewriter) => {
-                    typewriter.typeString("One mint spot").start().callFunction(() => {
-                      setShowLeftTopContent(true);
-                    });
-                  }}
-                />
-                <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>One mint spot is a launchpad
-                  that
-                  help anyone create a full NFT collection.</h2>
-                <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>We Help in all steps from
-                  Drawing
-                  to Mint function.</h2>
-                <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>You only need an idea.</h2>
-              </div>
-              <div className="bottom-content">
-                <div className="left">
-                  <FaHeart style={{color: "#ff0000"}}/>
-                  <FaRegComment/>
-                  <FiSend/>
-                </div>
-                <div className="right d-flex justify-content-end align-content-center">
-                  <BsBookmark/>
-                </div>
-              </div>
+            <div className="side-content d-flex flex-column justify-content-center">
+              <TypewriterComponent
+                onInit={(typewriter) => {
+                  typewriter.typeString("One mint spot").start().callFunction(() => {
+                    setShowLeftTopContent(true);
+                  });
+                }}
+              />
+              <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>One mint spot is a launchpad
+                that
+                help anyone create a full NFT collection.</h2>
+              <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>We Help in all steps from
+                Drawing
+                to Mint function.</h2>
+              <h2 className={`sub-title ${showLeftTopContent && "sub-title-active"}`}>You only need an idea.</h2>
+              <div className="sub-border"/>
             </div>
           </Col>
           <Col lg={6}

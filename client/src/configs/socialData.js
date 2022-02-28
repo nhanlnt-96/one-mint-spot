@@ -4,16 +4,16 @@ export const socialData = [
   {
     socialId: "@onemintspot",
     socialIcon: FaInstagram,
-    socialUrl: "#"
+    socialUrl: "https://www.instagram.com/nftrepreneur/"
   },
-  {
-    socialId: "@onemintspot",
-    socialIcon: FaFacebookF,
-    socialUrl: "#"
-  },
+  // {
+  //   socialId: "@onemintspot",
+  //   socialIcon: FaFacebookF,
+  //   socialUrl: "#"
+  // },
   {
     socialId: "@onemintspot",
     socialIcon: FaTwitter,
-    socialUrl: "#"
+    socialUrl: "https://twitter.com/onemintspot"
   },
 ];

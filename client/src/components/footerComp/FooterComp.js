@@ -3,6 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import {FaFacebookF, FaLinkedinIn, FaPinterest, FaTwitter} from "react-icons/all";
 
 import "./FooterComp.scss";
+import {socialData} from "configs/socialData";
 
 const FooterComp = () => {
   return (
@@ -23,18 +24,16 @@ const FooterComp = () => {
         {/*  </Row>*/}
         {/*</Container>*/}
         <Row className="footer-social d-flex justify-content-center align-items-center">
-          <a href="#" className="social-item">
-            <FaFacebookF/>
-          </a>
-          <a href="#" className="social-item">
-            <FaTwitter/>
-          </a>
-          <a href="#" className="social-item">
-            <FaLinkedinIn/>
-          </a>
-          <a href="#" className="social-item">
-            <FaPinterest/>
-          </a>
+          {
+            socialData.map((val, index) => {
+              const Icon = val.socialIcon;
+              return (
+                <a href={val.socialUrl} className="social-item">
+                  <Icon/>
+                </a>
+              );
+            })
+          }
         </Row>
       </Container>
     </Container>
