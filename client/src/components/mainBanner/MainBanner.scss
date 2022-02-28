@@ -31,38 +31,67 @@
 
 .main-banner-content {
   .main-banner {
-    &-left-side .side-content {
-      width: 100%;
-
-      .Typewriter__wrapper, .Typewriter__cursor {
-        font-size: 45px;
-        line-height: 55px;
-        text-transform: uppercase;
-        color: #3236DD;
-        font-weight: bolder;
-        margin-bottom: 24px;
-        @include mobile {
-          text-align: center;
-        }
+    &-left-side {
+      .border-container {
+        width: 450px;
+        display: grid;
+        grid-template-rows: 400px 50px;
+        background-color: #9da0ef;
+        padding: 12px;
       }
 
-      .sub-title {
-        font-size: 20px;
-        line-height: 30px;
-        transition: .1s ease-in;
-        transform: scale(0);
-        @include mobile {
+      .border-container .side-content {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0 12px;
+
+        .Typewriter__wrapper, .Typewriter__cursor {
+          font-size: 45px;
+          line-height: 55px;
+          text-transform: uppercase;
+          color: #3236DD;
+          font-weight: bolder;
           text-align: center;
-          &:last-child {
-            margin-bottom: 24px;
+          @include mobile {
+            font-size: 39px;
           }
         }
+
+        .sub-title {
+          font-size: 20px;
+          line-height: 30px;
+          transition: .1s ease-in;
+          transform: scale(0);
+          @include mobile {
+            &:last-child {
+              margin-bottom: 24px;
+            }
+          }
+        }
+
+        .sub-title-active {
+          transform: scale(1);
+        }
       }
 
-      .sub-title-active {
-        transform: scale(1);
+      .border-container .bottom-content {
+        height: 100%;
+        width: 100%;
+        padding-top: 12px;
+        display: grid;
+        grid-template-columns: 1fr 50px;
+
+        .left svg, .right svg {
+          font-size: 22px;
+          color: #ffffff;
+        }
+
+        .left svg:nth-child(2) {
+          margin: 0 12px;
+        }
       }
     }
+
 
     &-right-side {
       img {
@@ -77,35 +106,6 @@
 }
 
 .main-banner-contact {
-  .address-container {
-    .address-item, .phone {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .phone {
-      text-decoration: none;
-      color: #000000;
-      margin-left: 24px;
-    }
-
-    @include mobile {
-      display: grid !important;
-      grid-template-rows: repeat(1, 1fr);
-      margin-top: 24px;
-      .address-item, .phone {
-        text-align: center;
-        flex: 1;
-      }
-      .address-item {
-        margin-bottom: 12px;
-      }
-      .phone {
-        width: 100%;
-      }
-    }
-  }
-
   .contact-social {
     display: flex;
     justify-content: center;
@@ -146,6 +146,10 @@
       .social-item {
         width: calc(100% / 2);
         justify-content: center;
+
+        &:last-child {
+          margin-top: 12px;
+        }
       }
     }
   }

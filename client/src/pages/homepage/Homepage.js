@@ -12,7 +12,7 @@ import "./Homepage.scss";
 
 const Homepage = () => {
   return (
-    <Container fluid className="homepage-container">
+    <Container fluid className="homepage-container overflow-hidden">
       <Row id="home">
         <MainBanner/>
       </Row>
